@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "TabTracker by SOHAM",
+  "version": "1.0",
+  "description": "Track the amount of time spent on each tab.",
+  "permissions": ["tabs", "idle", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"]
+}

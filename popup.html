@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TabTracker by SOHAM</title>
+    <!-- Import Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        html {
+            background-color: azure;
+        }
+        body { 
+            color: #570028;
+            background-color: #d8ffe9;
+            font-family: 'Poppins', sans-serif; 
+            width: 300px; 
+            border-radius: 25px;
+            border: 2px solid #73AD21; 
+            padding: 12px;
+            margin: 2;
+            overflow: hidden;
+            position: relative; /* Allows absolute positioning inside */
+        }
+        ul { 
+            color: #581845;
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            padding: 8px; 
+            border-bottom: 1px solid #ddd; 
+        }
+        /* Credit text styling */
+        .credit {
+            position: absolute;
+            bottom: 10px; /* Increased spacing */
+            right: 10px;
+            font-size: 12px;
+            color: #444;
+            background: #d8ffe9; /* Light background for contrast */
+            padding: 5px 10px; /* Even padding */
+            border-radius: 10px; /* Slight rounded corners */
+        }
+    </style>
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <h2><span style="color:rgb(207, 97, 0)">Time Spent</span> on Tabs</h2>
+    <ul id="tabList"></ul>
+
+    <!-- Credit text -->
+    <div class="credit">Made by <strong>SOHAM</strong></div>
+</body>
+</html>
